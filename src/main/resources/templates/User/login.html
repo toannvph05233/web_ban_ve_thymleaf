@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/form.css}">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <form th:action="@{/user/login}" th:method="post" th:object="${user}">
+        <div class='login'>
+            <h2>Log In</h2>
+            <input name='email' th:field="*{email}" placeholder='E-Mail Address' autocomplete="off" type='text'>
+
+            <input id='pw' name='password' th:field="*{password}" placeholder='Password' autocomplete="new-password"
+                type='password'>
+
+            <div class='agree'>
+                <input id='agree' name='agree' type='checkbox'>
+                <label for='agree'></label>Remember me?
+            </div>
+
+            <input class='animated' type='submit' value='Login'>
+            <a class='forgot' th:href="@{/user/changePass}">Forgot Password?</a>
+            <a class='forgot' th:href="@{/user/showRegister}">Don't Have A Account?</a>
+        </div>
+    </form>
+</body>
+
+</html>

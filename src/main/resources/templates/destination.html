@@ -1,0 +1,264 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sogo Hotel by Colorlib.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" th:href="@{../css/style1.css}">
+
+    <style>
+        .search-wrap-1 {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: -100px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .search-wrap-1 .form-field {
+            position: relative;
+        }
+
+        .search-wrap-1 .form-field .icon {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .search-wrap-1 .form-control {
+            padding-left: 40px;
+        }
+
+        .project-wrap {
+            background: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .project-wrap .img {
+            position: relative;
+            height: 300px; /* Fixed height for image container */
+        }
+
+        .project-wrap .img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the entire container without distortion */
+        }
+
+        .project-wrap .price {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #fff;
+            padding: 5px 10px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .project-wrap .text {
+            padding: 20px;
+        }
+
+        .project-wrap .text h3 {
+            margin-bottom: 15px;
+        }
+
+        .project-wrap .text .location {
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: #999;
+        }
+
+        .project-wrap .text ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .project-wrap .text ul li {
+            font-size: 14px;
+        }
+
+        .block-27 ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        .block-27 ul li {
+            margin: 0 5px;
+        }
+
+        .block-27 ul li a, .block-27 ul li span {
+            display: block;
+            padding: 8px 12px;
+            border-radius: 3px;
+            background: #f8f9fa;
+            color: #000;
+        }
+
+        .block-27 ul li.active span {
+            background: #007bff;
+            color: #fff;
+        }
+
+        .ftco-intro .img {
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .ftco-intro .img .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .ftco-intro .img h2 {
+            font-size: 2.5rem;
+            z-index: 1;
+        }
+
+        .ftco-intro .img p {
+            z-index: 1;
+        }
+
+        .ftco-intro .img .btn {
+            z-index: 1;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header th:insert="~{/Hotel/header1 :: header}"></header>
+
+<section class="site-hero overlay" style="background-image: url(/images/bg_1.jpg)" data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="row site-hero-inner justify-content-center align-items-center">
+            <div class="col-md-10 text-center" data-aos="fade-up">
+                <span class="custom-caption text-uppercase text-white d-block mb-3">Welcome To 5 <span class="fa fa-star text-primary"></span> Hotel</span>
+                <h1 class="heading">A Best Place To Stay</h1>
+            </div>
+        </div>
+    </div>
+    <a class="mouse smoothscroll" href="#next">
+        <div class="mouse-icon">
+            <span class="mouse-wheel"></span>
+        </div>
+    </a>
+</section>
+
+<section class="ftco-section ftco-no-pb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="search-wrap-1 ftco-animate">
+                    <form action="#" class="search-property-1">
+                        <div class="row no-gutters">
+                            <div class="col-9 d-flex">
+                                <div class="form-group p-4 border-0" style="width: 100%;">
+                                    <label for="search">Destination</label>
+                                    <div class="form-field">
+                                        <div class="icon"><span class="fa fa-search"></span></div>
+                                        <input name="search" style="width: 100%;" id="search" type="text" class="form-control" placeholder="Search place">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 d-flex" style="padding-top: 55px">
+                                <div class="form-group d-flex w-100 border-0">
+                                    <div class="form-field w-100 align-items-center d-flex">
+                                        <input type="submit" value="Search" class="align-self-stretch form-control btn btn-primary">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ftco-section">
+    <div class="container">
+        <div class="row">
+            <div th:each="ticket : ${tickets}" class="col-md-4 ftco-animate">
+                <div class="project-wrap">
+                    <div class="img">
+                        <img th:src="@{${ticket.image}}" alt="Ticket Image">
+                        <span class="price" th:text="${ticket.price} + ' USD'"></span>
+                    </div>
+                    <div class="text p-4">
+                        <h3><a th:href="@{/ticket/{id}(id=${ticket.ticketID})}" th:text="${ticket.title}"></a></h3>
+                        <p th:text="${ticket.description}"></p>
+                        <p class="location"><span class="fa fa-map-marker"></span> <span th:text="${ticket.serviceID.serviceName}"></span></p>
+                        <ul>
+                            <li><span class="fa fa-ticket"></span> <span th:text="${ticket.ticketTypeID.ticketTypeName}"></span></li>
+                            <li><span class="fa fa-check"></span> <span th:text="${ticket.status ? 'Available' : 'Sold Out'}"></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row mt-5">
+            <div class="col text-center">
+                <div class="block-27">
+                    <ul>
+                        <li th:if="${currentPage > 1}" class="page-item"><a th:href="@{${search != '' ? '/destinations?search=' + search + '&page=' + (currentPage - 1) : '/destinations?page=' + (currentPage - 1)}}">&lt;</a></li>
+                        <li th:each="i : ${#numbers.sequence(1, totalPages)}" class="page-item">
+                            <a th:href="@{${search != '' ? '/destinations?search=' + search + '&page=' + i : '/destinations?page=' + i}}"
+                               th:text="${i}" th:classappend="${i == currentPage ? 'active' : ''}">1</a>
+                        </li>
+                        <li th:if="${currentPage < totalPages}" class="page-item"><a th:href="@{${search != '' ? '/destinations?search=' + search + '&page=' + (currentPage + 1) : '/destinations?page=' + (currentPage + 1)}}">&gt;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+</section>
+
+<footer th:insert="~{/Hotel/footer1 :: footer}"></footer>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/jquery.timepicker.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
